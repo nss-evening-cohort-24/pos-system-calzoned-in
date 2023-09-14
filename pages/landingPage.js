@@ -1,4 +1,3 @@
-import landingPageEvents from '../events/landingPageEvents';
 import renderToDom from '../utils/renderToDom';
 
 const showLandingPage = () => {
@@ -9,7 +8,6 @@ const showLandingPage = () => {
   <button type="button id="view-revenue-btn">View Revenue</button
   `;
   renderToDom('#landing-page', domString);
-  landingPageEvents();
 };
 
 export default showLandingPage;
