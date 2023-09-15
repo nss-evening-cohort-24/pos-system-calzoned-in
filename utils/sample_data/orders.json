@@ -5,7 +5,8 @@
     "email": "bmichelle0@nymag.com",
     "phone": "106-382-4854",
     "isPhone": true,
-    "uid": "70-507-5054"
+    "uid": "70-507-5054",
+    "itemsId": ""
   },
   "-Ne6A4KrU6KUF9TQdfxa": {
     "customerName": "Sarina",
@@ -13,7 +14,8 @@
     "email": "spatron1@altervista.org",
     "phone": "765-822-1704",
     "isPhone": true,
-    "uid": "82-577-9209"
+    "uid": "82-577-9209",
+    "itemsId": ""
   },
   "-Ne6A4KrU6KUF9TQdfxb": {
     "customerName": "Filip",
@@ -21,7 +23,8 @@
     "email": "flongland2@behance.net",
     "phone": "675-797-0120",
     "isPhone": true,
-    "uid": "00-659-6343"
+    "uid": "00-659-6343",
+    "itemsId": ""
   },
   "-Ne6A4Ks1npKvafZfxZi": {
     "customerName": "Troy",
@@ -29,7 +32,8 @@
     "email": "tmatijasevic3@paypal.com",
     "phone": "246-364-3873",
     "isPhone": false,
-    "uid": "69-796-3159"
+    "uid": "69-796-3159",
+    "itemsId": ""
   },
   "-Ne6A4Ktm4GzRdswH0Eq": {
     "customerName": "Agretha",
@@ -37,7 +41,8 @@
     "email": "awoollaston4@drupal.org",
     "phone": "280-158-2639",
     "isPhone": true,
-    "uid": "67-428-1648"
+    "uid": "67-428-1648",
+    "itemsId": ""
   },
   "-Ne6A4Ktm4GzRdswH0Er": {
     "customerName": "Janene",
@@ -45,7 +50,8 @@
     "email": "jmound5@irs.gov",
     "phone": "118-758-6407",
     "isPhone": true,
-    "uid": "60-812-8880"
+    "uid": "60-812-8880",
+    "itemsId": ""
   },
   "-Ne6A4Kuwprp1u9e54_X": {
     "customerName": "Ruddy",
@@ -53,7 +59,8 @@
     "email": "rdeal6@jimdo.com",
     "phone": "783-997-5544",
     "isPhone": false,
-    "uid": "75-175-7714"
+    "uid": "75-175-7714",
+    "itemsId": ""
   },
   "-Ne6A4Kuwprp1u9e54_Y": {
     "customerName": "Klarrisa",
@@ -61,7 +68,8 @@
     "email": "ksagerson7@mapquest.com",
     "phone": "474-175-1290",
     "isPhone": true,
-    "uid": "58-466-1303"
+    "uid": "58-466-1303",
+    "itemsId": ""
   },
   "-Ne6A4Kvl1kp1YiiR4iK": {
     "customerName": "Lorenza",
@@ -69,7 +77,8 @@
     "email": "lsealove8@baidu.com",
     "phone": "463-173-4202",
     "isPhone": true,
-    "uid": "46-414-3424"
+    "uid": "46-414-3424",
+    "itemsId": ""
   },
   "-Ne6A4KwkuE6S0YqbVr5": {
     "customerName": "Bordy",
@@ -77,6 +86,7 @@
     "email": "byaus9@reuters.com",
     "phone": "684-577-2968",
     "isPhone": false,
-    "uid": "32-990-8269"
+    "uid": "32-990-8269",
+    "itemsId": ""
   }
 }

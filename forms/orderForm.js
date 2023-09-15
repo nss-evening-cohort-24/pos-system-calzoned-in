@@ -1,7 +1,8 @@
 import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDom';
+import selectItem from './selectItem';
 
-const addOrderForm = (obj = {}) => {
+const addOrderForm = (uid, obj = {}) => {
   clearDom();
   const domString = `
     <form id="${obj.firebaseKey ? `update-order--${obj.firebaseKey}` : 'submit-order'}" class="mb-4">
@@ -32,6 +33,7 @@ const addOrderForm = (obj = {}) => {
     </form>`;
 
   renderToDOM('#form-container', domString);
+  selectItem(`${obj.items || ''}`, uid);
 };
 
 export default addOrderForm;
