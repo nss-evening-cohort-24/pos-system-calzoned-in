@@ -11,7 +11,7 @@ const navBar = () => {
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <button class="nav-link" href="#" id="create-order">
+              <button class="nav-link" href="#" id="add-order-btn">
                 Create Order <span class="sr-only">(current)</span>
               </button>
             </li>

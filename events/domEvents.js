@@ -1,6 +1,5 @@
-import {
-  getOrders, deleteOrder, emptyOrders, showOrders
-} from '../api/orderData';
+import { getOrders, deleteOrder } from '../api/orderData';
+import { showOrders, emptyOrders } from '../pages/orders';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
