@@ -1,6 +1,5 @@
 import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDom';
-import selectItem from './selectItem';
 
 const addOrderForm = (uid, obj = {}) => {
   clearDom();
@@ -17,23 +16,19 @@ const addOrderForm = (uid, obj = {}) => {
       <div class="form-group">
         <label for="phone">Phone Number</label>
         <input type="text" class="form-control" id="phone" placeholder="Phone Number" value="${obj.phone || ''}" required>
+        <div class="form-group">
+        <label for="ordertype">Order Type</label>
+        <select class="form-control" id="ordertype" required>
+          <option value="" disabled selected>Order Type</option>
+          <option value="Phone" ${obj.isPhone ? 'selected' : ''}>Phone</option>
+          <option value="Walk-in" ${obj.isPhone ? 'disabled' : ''} ${obj.isWalkIn ? 'selected' : ''}>Walk-in</option>
+        </select>
       </div>
-      <div class="form-group" id="select-item">
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="ordertype" ${obj.isPhone ? 'checked' : ''}>
-        <label class="form-check-label" for="phoneorder">Phone</label>
-      </div>
-      <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="ordertype" ${obj.isPhone ? 'checked' : ''}>
-      <label class="form-check-label" for="walkorder">Walk in</label>
-    </div>
-      <button type="submit" class="btn btn-primary">Submit Order
+      <button type="submit" id="addordbtn" class="btn btn-info">Submit Order
       </button>
     </form>`;
 
   renderToDOM('#form-container', domString);
-  selectItem(`${obj.items || ''}`, uid);
 };
 
 export default addOrderForm;
