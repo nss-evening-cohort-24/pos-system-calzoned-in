@@ -42,10 +42,11 @@ body {
   align-content: center;
 
   #form-container {
-    width: 60%;
+    width: 30%;
     margin: auto;
     justify-content: center;
-    color: white;
+    color: black;
+    margin-top: 70px;
 
     #formModal {
       color: black;
@@ -91,4 +92,11 @@ body {
 .navbar-nav > li{
   padding-left:8px;
   padding-right:8px;
+}
+
+
+#addordbtn {
+  position: relative;
+  top: 20px; 
+  width: 200px; 
 }
