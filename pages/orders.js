@@ -8,7 +8,6 @@ const emptyOrders = () => {
 
 const showOrders = (array) => {
   clearDom();
-
   let domString = '';
   if (array.length < 1) {
     domString += '<h1>No Orders Found!</h1>';
@@ -22,7 +21,7 @@ const showOrders = (array) => {
       <div class="text-secondary">${item.isOpen}</div><BR>
       <div class="text-secondary">${item.phone}</div><BR>
       <div class="text-secondary">${item.email}</div><BR>
-      <div class="text-secondary">${item.isPhone}</div><BR>
+      <div class="text-secondary">${item.orderType}</div><BR>
       <a class="btn btn-view" 
       id="view-order-btn--${item.firebaseKey}">Details</a>
       <a class="btn btn-edit"

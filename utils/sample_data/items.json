@@ -2,51 +2,61 @@
   "-Ne6AUF8snxtlvfxgJVE": {
     "itemName": "cheese",
     "price": 1.63,
-    "uid": ""
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6AUF8snxtlvfxgJVE"
   },
   "-Ne6AUF8snxtlvfxgJVF": {
     "itemName": "pepperoni",
     "price": 9.19,
-    "uid": ""
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6AUF8snxtlvfxgJVF"
   },
   "-Ne6AUF9xNjpNfBO9s6Y": {
     "itemName": "pepperoni",
     "price": 7.83,
-    "uid": ""
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6AUF9xNjpNfBO9s6Y"
   },
   "-Ne6AUF9xNjpNfBO9s6Z": {
     "itemName": "bbq",
     "price": 9.77,
-    "uid": ""
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6AUF9xNjpNfBO9s6Z"
   },
   "-Ne6AUF9xNjpNfBO9s6_": {
     "itemName": "margherita",
     "price": 5.28,
-    "uid": ""
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6AUF9xNjpNfBO9s6_"
   },
   "-Ne6AUF9xNjpNfBO9s6a": {
     "itemName": "pepperoni",
     "price": 4.3,
-    "uid": ""
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6AUF9xNjpNfBO9s6a"
   },
   "-Ne6AUFAKomup8eagcZH": {
     "itemName": "buffalo",
     "price": 5.26,
-    "uid": ""
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6AUFAKomup8eagcZH"
   },
   "-Ne6AUFAKomup8eagcZI": {
     "itemName": "garlic parmesan",
     "price": 5.27,
-    "uid": ""
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6AUFAKomup8eagcZI"
   },
   "-Ne6AUFBXeteSnfD8EKM": {
     "itemName": "bbq",
     "price": 8.66,
-    "uid": ""
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6AUFBXeteSnfD8EKM"
   },
   "-Ne6AUFBXeteSnfD8EKN": {
     "itemName": "garlic parmesan",
     "price": 5.3,
-    "uid": ""
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6AUFBXeteSnfD8EKN"
   }
 }

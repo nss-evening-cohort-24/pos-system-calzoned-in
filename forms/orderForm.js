@@ -1,13 +1,13 @@
 import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDom';
 
-const addOrderForm = (uid, obj = {}) => {
+const addOrderForm = (obj = {}) => {
   clearDom();
   const domString = `
     <form id="${obj.firebaseKey ? `update-order--${obj.firebaseKey}` : 'submit-order'}" class="mb-4">
       <div class="form-group">
         <label for="title">Customer Name</label>
-        <input type="text" class="form-control" id="customername" aria-describedby="customerName" placeholder="Enter Customer Name" value="${obj.customerName || ''}" required>
+        <input type="text" class="form-control" id="customer_name" aria-describedby="customer_name" placeholder="Enter Customer Name" value="${obj.customerName || ''}" required>
       </div>
       <div class="form-group">
       <label for="title">Email</label>
@@ -18,10 +18,10 @@ const addOrderForm = (uid, obj = {}) => {
         <input type="text" class="form-control" id="phone" placeholder="Phone Number" value="${obj.phone || ''}" required>
         <div class="form-group">
         <label for="ordertype">Order Type</label>
-        <select class="form-control" id="ordertype" required>
+        <select class="form-control" id="order_type" required>
           <option value="" disabled selected>Order Type</option>
-          <option value="Phone" ${obj.isPhone ? 'selected' : ''}>Phone</option>
-          <option value="Walk-in" ${obj.isPhone ? 'disabled' : ''} ${obj.isWalkIn ? 'selected' : ''}>Walk-in</option>
+          <option value="Phone" ${obj.orderType ? 'selected' : ''}>Phone</option>
+          <option value="Walk-in" ${obj.orderType ? 'selected' : ''} ${obj.isWalkIn ? 'selected' : ''}>Walk-in</option>
         </select>
       </div>
       <button type="submit" id="addordbtn" class="btn btn-info">Submit Order

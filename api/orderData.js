@@ -94,6 +94,16 @@ const deleteOrder = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const searchOrders = (searchValue, uid) => new Promise((resolve, reject) => {
+  getOrders(uid).then((ordersArray) => {
+    const searchResults = ordersArray.filter((order) => (
+      order.customerName.toLowerCase().includes(searchValue)
+      // || order.isOpen.toLowerCase().includes(searchValue)
+    ));
+    resolve(searchResults);
+  }).catch(reject);
+});
+
 export {
   getOrders,
   getClosedOrders,
@@ -101,4 +111,5 @@ export {
   createOrder,
   updateOrder,
   deleteOrder,
+  searchOrders
 };
