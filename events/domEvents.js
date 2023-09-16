@@ -1,5 +1,6 @@
-import { getOrders, deleteOrder } from '../api/orderData';
+import { getOrders, deleteOrder, getSingleOrder } from '../api/orderData';
 import { showOrders, emptyOrders } from '../pages/orders';
+import addOrderForm from '../forms/orderForm';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -17,6 +18,22 @@ const domEvents = (user) => {
           });
         });
       }
+    }
+  });
+  document.querySelector('#landing-page').addEventListener('click', (e) => {
+    if (e.target.id.includes('view-orders-btn')) {
+      getOrders(user.uid).then(showOrders);
+    }
+  });
+  document.querySelector('#landing-page').addEventListener('click', (e) => {
+    if (e.target.id.includes('add-order-btn')) {
+      addOrderForm(user.uid);
+    }
+  });
+  document.querySelector('#main-container').addEventListener('click', (e) => {
+    if (e.target.id.includes('update-order')) {
+      const [, firebaseKey] = e.target.id.split('--');
+      getSingleOrder(firebaseKey).then((orderObj) => addOrderForm(orderObj));
     }
   });
 };
