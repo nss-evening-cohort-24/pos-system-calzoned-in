@@ -16,7 +16,7 @@ const navBar = () => {
               </button>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#" id="view-order">View Order</a>
+            <a class="nav-link" href="#" id="view-orders">View Orders</a>
           </li>
             <li>
             <input
