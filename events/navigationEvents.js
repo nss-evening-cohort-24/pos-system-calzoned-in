@@ -2,6 +2,9 @@ import addOrderForm from '../forms/orderForm';
 import { signOut } from '../utils/auth';
 import { getOrders, searchOrders } from '../api/orderData';
 import { showOrders, emptyOrders } from '../pages/orders';
+import clearDom from '../utils/clearDom';
+import showLandingPage from '../pages/landingPage';
+// import showLandingPage from '../pages/landingPage';
 
 const navEvents = (user) => {
   document.querySelector('#navigation').addEventListener('click', (e) => {
@@ -14,6 +17,11 @@ const navEvents = (user) => {
 
     document.querySelector('#view-orders').addEventListener('click', () => {
       getOrders(user.uid).then(showOrders);
+    });
+
+    document.querySelector('#landing-page-btn').addEventListener('click', () => {
+      clearDom();
+      showLandingPage();
     });
   });
   document.querySelector('#search').addEventListener('keyup', (e) => {
