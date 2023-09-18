@@ -21,12 +21,12 @@ const domEvents = (user) => {
     }
   });
   document.querySelector('#landing-page').addEventListener('click', (e) => {
-    if (e.target.id.includes('view-orders-btn')) {
+    if (e.target.id.includes('landing-view-orders-btn')) {
       getOrders(user.uid).then(showOrders);
     }
   });
   document.querySelector('#landing-page').addEventListener('click', (e) => {
-    if (e.target.id.includes('add-order-btn')) {
+    if (e.target.id.includes('landing-add-order-btn')) {
       addOrderForm(user.uid);
     }
   });

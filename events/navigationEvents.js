@@ -21,7 +21,7 @@ const navEvents = (user) => {
 
     document.querySelector('#landing-page-btn').addEventListener('click', () => {
       clearDom();
-      showLandingPage();
+      showLandingPage(user);
     });
   });
   document.querySelector('#search').addEventListener('keyup', (e) => {
