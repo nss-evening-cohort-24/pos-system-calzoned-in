@@ -100,3 +100,39 @@ body {
   top: 20px; 
   width: 200px; 
 }
+
+#landing-page-btn {
+  background: transparent;
+  border-radius: 53%;
+}
+
+div#landing-page {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button#landing-view-orders-btn {
+  height: 40px;
+  width: 250px;
+  margin: 30px;
+  color: white;
+  background-color: green;
+}
+
+button#landing-add-order-btn {
+  height: 40px;
+  width: 250px;
+  margin: 30px;
+  color: white;
+  background-color: blue;
+}
+
+button#landing-view-revenue-btn {
+  height: 40px;
+  width: 250px;
+  margin: 30px;
+  color: white;
+  background-color: purple;
+}
