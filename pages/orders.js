@@ -17,11 +17,11 @@ const showOrders = (array) => {
     <div class="card">
     <div class="card-body" style="width: 18rem;">
       <blockquote class="blockquote mb-0">
-      <h5 class="text-secondary">${item.customerName}</h5><BR>
-      <div class="text-secondary">${item.isOpen}</div><BR>
-      <div class="text-secondary">${item.phone}</div><BR>
-      <div class="text-secondary">${item.email}</div><BR>
-      <div class="text-secondary">${item.orderType}</div><BR>
+      <h5 class="text-secondary">Name: ${item.customerName}</h5><BR>
+      <div class="text-secondary">Order Status: ${item.isOpen ? 'Open' : 'Closed'}</div><BR>
+      <div class="text-secondary">Phone Number: ${item.phone}</div><BR>
+      <div class="text-secondary">Email: ${item.email}</div><BR>
+      <div class="text-secondary">Order Type: ${item.orderType}</div><BR>
       <a class="btn btn-view" 
       id="view-order-btn--${item.firebaseKey}">Details</a>
       <a class="btn btn-edit"
