@@ -21,7 +21,7 @@ const addOrderForm = (obj = {}) => {
         <select class="form-control" id="order_type" required>
           <option value="" disabled selected>Order Type</option>
           <option value="Phone" ${obj.orderType ? 'selected' : ''}>Phone</option>
-          <option value="Walk-in" ${obj.orderType ? 'selected' : ''} ${obj.isWalkIn ? 'selected' : ''}>Walk-in</option>
+          <option value="Walk-in" ${obj.orderType ? 'selected' : ''}>Walk-in</option>
         </select>
       </div>
       <button type="submit" id="addordbtn" class="btn btn-info">Submit Order
