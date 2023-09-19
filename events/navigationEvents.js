@@ -4,7 +4,6 @@ import { getOrders, searchOrders } from '../api/orderData';
 import { showOrders, emptyOrders } from '../pages/orders';
 import clearDom from '../utils/clearDom';
 import showLandingPage from '../pages/landingPage';
-// import showLandingPage from '../pages/landingPage';
 
 const navEvents = (user) => {
   document.querySelector('#navigation').addEventListener('click', (e) => {

@@ -23,7 +23,7 @@ const showOrders = (array) => {
       <div class="text-secondary">Email: ${item.email}</div><BR>
       <div class="text-secondary">Order Type: ${item.orderType}</div><BR>
       <a class="btn btn-view" 
-      id="view-order-btn--${item.firebaseKey}">Details</a>
+      id="view-details-btn--${item.firebaseKey}">Details</a>
       <a class="btn btn-edit"
       id="update-order--${item.firebaseKey}">Edit</a>
       <a id="delete-order-btn--${item.firebaseKey}"

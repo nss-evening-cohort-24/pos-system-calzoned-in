@@ -1,25 +1,29 @@
 import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDom';
 
-// FORM TO ADD AN ITEM
-const addItemForm = (uid, obj = {}) => {
+const addNewItem = (array, orderId) => {
   clearDom();
-  const domString = `
-  <form id="${obj.firebaseKey ? `update-item--${obj.firebaseKey}` : 'submit-item'}" class="mb-4">
-  <div class="form-group">
-    <label for="title">Item Name:</label>
-    <input type="text" class="form-control" id="title" aria-describedby="itemTitle" placeholder="Enter An Item" value="${obj.itemName || ''}" required>
-  </div> <BR>
-  <div class="form-group">
-    <label for="description">Item Price:</label>
-    <textarea class="form-control" placeholder="Enter Price" id="price" style="height: 100px">${obj.price || ''}</textarea>
-  </div><BR>
-  <button type="submit" class="btn btn-outline" id="submit-btn">$obj.firebaseKey ? 'Add/Edit Item' : 'Submit Item'}
-  </button>
-</form>
-  `;
+  let domString = '';
 
-  renderToDOM('#form-container', domString);
+  if (!array.length) {
+    domString += '<h1 style="display:grid; color:white;">All Available Items Are Added To Order</h1>';
+  } else {
+    domString += '<h3 style="display:grid;">Menu Items</h3>';
+    array.forEach((item) => {
+      domString += `
+      <div class="wrap">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">${item.itemName}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">$${item.price}</h6>
+          <div>
+          <button id="add-item-order-btn--${item.firebaseKey}--${orderId}" type="button" class="btn btn-success">ADD ITEM TO CART</button>
+          </div>
+        </div>
+      </div>`;
+    });
+  }
+  renderToDOM('#store', domString);
 };
 
-export default addItemForm;
+export default addNewItem;
