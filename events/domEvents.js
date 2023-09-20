@@ -6,7 +6,7 @@ import getItemsByOrder from '../api/getItemsByOrder';
 import { showOrders, emptyOrders } from '../pages/orders';
 import { getItems, createOrderItem, updateOrderItems } from '../api/itemData';
 import addNewItem from '../forms/itemForm';
-import { emptyItems, showItems } from '../pages/items';
+import { showItems } from '../pages/items';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -78,13 +78,14 @@ const domEvents = (user) => {
     if (e.target.id.includes('delete-item-btn')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete item?')) {
+        console.warn('?', e.target);
         const [, firebaseKey] = e.target.id.split('--');
         deleteItemFromOrder(firebaseKey).then(() => {
-          getItemsByOrder(user.uid).then((res) => {
-            if (res.orderItems.length < 1) {
-              showItems(res);
+          getOrders(user.uid).then((array) => {
+            if (array.length) {
+              showOrders(array);
             } else {
-              emptyItems();
+              emptyOrders();
             }
           });
         });
