@@ -1,5 +1,5 @@
 import {
-  getOrders, deleteOrder, getSingleOrder, deleteItemFromOrder
+  getOrders, getSingleOrder, deleteItemFromOrder
 } from '../api/orderData';
 import addOrderForm from '../forms/orderForm';
 import getItemsByOrder from '../api/getItemsByOrder';
@@ -7,6 +7,7 @@ import { showOrders, emptyOrders } from '../pages/orders';
 import { getItems, createOrderItem, updateOrderItems } from '../api/itemData';
 import addNewItem from '../forms/itemForm';
 import { showItems } from '../pages/items';
+import deleteOrderItemRelationship from '../api/deleteOrderITemRelationship';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -14,7 +15,7 @@ const domEvents = (user) => {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete order?')) {
         const [, firebaseKey] = e.target.id.split('--');
-        deleteOrder(firebaseKey).then(() => {
+        deleteOrderItemRelationship(firebaseKey).then(() => {
           getOrders(user.uid).then((array) => {
             if (array.length) {
               showOrders(array);
