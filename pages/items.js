@@ -21,7 +21,7 @@ const showItems = (res) => {
         <h5 class="card-title">${orderItem.item.itemName}</h5>
         <h6 class="card-subtitle mb-2 text-body-secondary">$${orderItem.item.price}</h6>
         <a href="#" class="card-link" id="edit-item-btn--${orderItem.orderItemKey}">Edit Item</a>
-        <a href="#" class="card-link" id="delete-item-btn--${orderItem.orderItemKey}">Delete Item</a>
+        <a href="#" class="card-link" id="delete-item-btn--${orderItem.orderItemKey}--${res.firebaseKey}">Delete Item</a>
       </div>
     </div>`;
     });

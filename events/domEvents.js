@@ -75,19 +75,13 @@ const domEvents = (user) => {
     }
   });
   document.querySelector('#store').addEventListener('click', (e) => {
+    const [,, orderId] = e.target.id.split('--');
     if (e.target.id.includes('delete-item-btn')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete item?')) {
-        console.warn('?', e.target);
         const [, firebaseKey] = e.target.id.split('--');
         deleteItemFromOrder(firebaseKey).then(() => {
-          getOrders(user.uid).then((array) => {
-            if (array.length) {
-              showOrders(array);
-            } else {
-              emptyOrders();
-            }
-          });
+          getItemsByOrder(orderId).then((res) => showItems(res));
         });
       }
     }
