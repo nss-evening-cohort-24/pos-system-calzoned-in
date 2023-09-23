@@ -7,8 +7,7 @@
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
     "firebaseKey": "-Ne6A4Kqx69R9hZqxxGb",
-    "paymentType": "Cash",
-    "tip": 10
+    "paymentType": "Cash"
   },
   "-Ne6A4KrU6KUF9TQdfxa": {
     "customerName": "Sarina",
@@ -18,8 +17,7 @@
     "orderType": "Walk-in",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
     "firebaseKey": "-Ne6A4KrU6KUF9TQdfxa",
-    "paymentType": "Cash",
-    "tip": 10
+    "paymentType": "Cash"
   },
   "-Ne6A4KrU6KUF9TQdfxb": {
     "customerName": "Filip",
@@ -29,8 +27,7 @@
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
     "firebaseKey": "-Ne6A4KrU6KUF9TQdfxb",
-    "paymentType": "Cash",
-    "tip": 10
+    "paymentType": "Cash"
   },
   "-Ne6A4Ks1npKvafZfxZi": {
     "customerName": "Troy",
@@ -40,8 +37,7 @@
     "orderType": "Walk-in",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
     "firebaseKey": "-Ne6A4Ks1npKvafZfxZi",
-    "paymentType": "Cash",
-    "tip": 10
+    "paymentType": "Cash"
   },
   "-Ne6A4Ktm4GzRdswH0Eq": {
     "customerName": "Agretha",
@@ -51,8 +47,7 @@
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
     "firebaseKey": "-Ne6A4Ktm4GzRdswH0Eq",
-    "paymentType": "Cash",
-    "tip": 10
+    "paymentType": "Cash"
   },
   "-Ne6A4Ktm4GzRdswH0Er": {
     "customerName": "Janene",
@@ -62,8 +57,7 @@
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
     "firebaseKey": "-Ne6A4Ktm4GzRdswH0Er",
-    "paymentType": "Cash",
-    "tip": 10
+    "paymentType": "Cash"
   },
   "-Ne6A4Kuwprp1u9e54_X": {
     "customerName": "Ruddy",
@@ -73,8 +67,7 @@
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
     "firebaseKey": "-Ne6A4Kuwprp1u9e54_X",
-    "paymentType": "Cash",
-    "tip": 10
+    "paymentType": "Cash"
   },
   "-Ne6A4Kuwprp1u9e54_Y": {
     "customerName": "Klarrisa",
@@ -84,8 +77,7 @@
     "orderType": "Walk-in",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
     "firebaseKey": "-Ne6A4Kuwprp1u9e54_Y",
-    "paymentType": "Cash",
-    "tip": 10
+    "paymentType": "Cash"
   },
   "-Ne6A4Kvl1kp1YiiR4iK": {
     "customerName": "Lorenza",
@@ -95,8 +87,7 @@
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
     "firebaseKey": "-Ne6A4Kvl1kp1YiiR4iK",
-    "paymentType": "Cash",
-    "tip": 10
+    "paymentType": "Cash"
   },
   "-Ne6A4KwkuE6S0YqbVr5": {
     "customerName": "Bordy",
@@ -106,7 +97,6 @@
     "orderType": "Walk-in",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
     "firebaseKey": "-Ne6A4KwkuE6S0YqbVr5",
-    "paymentType": "Cash",
-    "tip": 10
+    "paymentType": "Cash"
   }
 }

@@ -93,27 +93,28 @@ const domEvents = (user) => {
       closeOrderForm(orderId, total);
     }
     if (e.target.id.includes('close-order-')) {
-      console.warn('closing order!');
       const [, firebaseKey, total] = e.target.id.split('--');
-      console.warn('closing order!');
       getSingleOrder(firebaseKey).then((res) => {
-        const paymentType = document.querySelector(`#close-order--${firebaseKey}--${total} #payment`);
-        const tipAmount = document.querySelector(`#close-order--${firebaseKey}--${total} #tips`);
-        if (paymentType && tipAmount) {
-          const payload = {
-            orderId: firebaseKey,
-            isOpen: false,
-            total,
-            paymentType: paymentType.value,
-            tip: tipAmount.value,
-            ordertype: res.ordertype
-          };
-          updateOrder(payload).then(() => {
-            getOrders(user.uid).then(showOrders);
+        const payload = {
+          isOpen: false,
+          total,
+          paymentType: document.querySelector('#payment').value,
+          tipAmount: document.querySelector('#tips').value,
+          orderType: res.orderType
+        };
+        console.warn('payload', payload);
+        const patchpayload = {
+          ...payload,
+          additionalProperty: 'value'
+        };
+        updateOrder(patchpayload).then(() => {
+          getOrders(user.uid).then((array) => {
+            showOrders(array);
           });
-        }
+        });
       });
     }
   });
 };
+
 export default domEvents;
