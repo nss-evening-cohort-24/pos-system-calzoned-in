@@ -15,7 +15,7 @@ const domEvents = (user) => {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete order?')) {
         const [, firebaseKey] = e.target.id.split('--');
-        deleteOrderItemRelationship(firebaseKey).then(() => {
+        deleteOrder(firebaseKey).then(() => {
           getOrders(user.uid).then((array) => {
             if (array.length) {
               showOrders(array);
