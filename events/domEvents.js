@@ -1,5 +1,5 @@
 import {
-  getOrders, deleteOrder, getSingleOrder, deleteItemFromOrder, updateOrder
+  getOrders, deleteOrder, getSingleOrder, deleteItemFromOrder
 } from '../api/orderData';
 import addOrderForm from '../forms/orderForm';
 import getItemsByOrder from '../api/getItemsByOrder';
@@ -8,6 +8,8 @@ import { getItems, createOrderItem, updateOrderItems } from '../api/itemData';
 import addNewItem from '../forms/itemForm';
 import { showItems } from '../pages/items';
 import closeOrderForm from '../forms/closeOrderForm';
+import { getRevenue } from '../api/revenue';
+import displayRevenue from '../pages/revenue';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -30,6 +32,9 @@ const domEvents = (user) => {
   document.querySelector('#landing-page').addEventListener('click', (e) => {
     if (e.target.id.includes('landing-view-orders-btn')) {
       getOrders(user.uid).then(showOrders);
+    }
+    if (e.target.id.includes('landing-view-revenue-btn')) {
+      getRevenue().then(displayRevenue);
     }
   });
   document.querySelector('#landing-page').addEventListener('click', (e) => {
@@ -91,28 +96,6 @@ const domEvents = (user) => {
     if (e.target.id.includes('payment-type-btn')) {
       const [, orderId, total] = e.target.id.split('--');
       closeOrderForm(orderId, total);
-    }
-    if (e.target.id.includes('close-order-')) {
-      const [, firebaseKey, total] = e.target.id.split('--');
-      getSingleOrder(firebaseKey).then((res) => {
-        const payload = {
-          isOpen: false,
-          total,
-          paymentType: document.querySelector('#payment').value,
-          tipAmount: document.querySelector('#tips').value,
-          orderType: res.orderType
-        };
-        console.warn('payload', payload);
-        const patchpayload = {
-          ...payload,
-          additionalProperty: 'value'
-        };
-        updateOrder(patchpayload).then(() => {
-          getOrders(user.uid).then((array) => {
-            showOrders(array);
-          });
-        });
-      });
     }
   });
 };
