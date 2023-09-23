@@ -8,3 +8,131 @@ body {
   text-align: center;
   margin-top: 100px;
 }
+
+.navbar-dark .navbar-brand {
+  font-family: 'Acme', sans-serif;
+  color: rgb(191, 0, 255);
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.cart-items {
+  height: 300px;
+  overflow: scroll;
+}
+
+.grey-box {
+  float: left;
+  margin: 2px;
+  width: 200px;
+  height: 200px;
+}
+
+.logout {
+  margin: 0 20px;
+  font-size: 25px;
+  color: white;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 100px;
+  align-content: center;
+
+  #form-container {
+    width: 30%;
+    margin: auto;
+    justify-content: center;
+    color: black;
+    margin-top: 70px;
+
+    #formModal {
+      color: black;
+    }
+  }
+
+  #store {
+    width: 90%;
+    font-family: 'Acme', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+
+    .card {
+      width: 300px;
+      margin: 5px;
+    }
+
+    .table {
+      margin: 10px;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+#view {
+  width: 30%;
+  margin: auto;
+
+  .details {
+    min-width: 50%;
+    max-width: 60%;
+  }
+
+  .description {
+    white-space: pre-wrap;
+  }
+}
+
+.navbar-nav > li{
+  padding-left:8px;
+  padding-right:8px;
+}
+
+
+#addordbtn {
+  position: relative;
+  top: 20px; 
+  width: 200px; 
+}
+
+#landing-page-btn {
+  background: transparent;
+  border-radius: 53%;
+}
+
+div#landing-page {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button#landing-view-orders-btn {
+  height: 40px;
+  width: 250px;
+  margin: 30px;
+  color: white;
+  background-color: green;
+}
+
+button#landing-add-order-btn {
+  height: 40px;
+  width: 250px;
+  margin: 30px;
+  color: white;
+  background-color: blue;
+}
+
+button#landing-view-revenue-btn {
+  height: 40px;
+  width: 250px;
+  margin: 30px;
+  color: white;
+  background-color: purple;
+}

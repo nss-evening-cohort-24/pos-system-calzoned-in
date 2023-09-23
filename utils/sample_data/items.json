@@ -1,0 +1,52 @@
+{
+  "-Ne6AUF8snxtlvfxgJVE": {
+    "itemName": "CHEDDAR PRETZEL BITES",
+    "price": 12,
+    "firebaseKey": "-Ne6AUF8snxtlvfxgJVE"
+  },
+  "-Ne6AUF8snxtlvfxgJVF": {
+    "itemName": "THE MIKEY",
+    "price": 15,
+    "firebaseKey": "-Ne6AUF8snxtlvfxgJVF"
+  },
+  "-Ne6AUF9xNjpNfBO9s6Y": {
+    "itemName": "FRENCH DIP CALZONE",
+    "price": 15,
+    "firebaseKey": "-Ne6AUF9xNjpNfBO9s6Y"
+  },
+  "-Ne6AUF9xNjpNfBO9s6Z": {
+    "itemName": "BUFFALO WINGS",
+    "price": 13,
+    "firebaseKey": "-Ne6AUF9xNjpNfBO9s6Z"
+  },
+  "-Ne6AUF9xNjpNfBO9s6_": {
+    "itemName": "PEACHES EN REGALIA",
+    "price": 18,
+    "firebaseKey": "-Ne6AUF9xNjpNfBO9s6_"
+  },
+  "-Ne6AUF9xNjpNfBO9s6a": {
+    "itemName": "BBQ WINGS",
+    "price": 13,
+    "firebaseKey": "-Ne6AUF9xNjpNfBO9s6a"
+  },
+  "-Ne6AUFAKomup8eagcZH": {
+    "itemName": "FAT TIRE NACHOS",
+    "price": 15,
+    "firebaseKey": "-Ne6AUFAKomup8eagcZH"
+  },
+  "-Ne6AUFAKomup8eagcZI": {
+    "itemName": "YA MAR",
+    "price": 18,
+    "firebaseKey": "-Ne6AUFAKomup8eagcZI"
+  },
+  "-Ne6AUFBXeteSnfD8EKM": {
+    "itemName": "MANGO HABANERO WINGS",
+    "price": 13,
+    "firebaseKey": "-Ne6AUFBXeteSnfD8EKM"
+  },
+  "-Ne6AUFBXeteSnfD8EKN": {
+    "itemName": "GARLIC PARMESAN WINGS",
+    "price": 13,
+    "firebaseKey": "-Ne6AUFBXeteSnfD8EKN"
+  }
+}

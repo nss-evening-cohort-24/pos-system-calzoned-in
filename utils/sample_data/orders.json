@@ -1,0 +1,92 @@
+{
+  "-Ne6A4Kqx69R9hZqxxGb": {
+    "customerName": "Baryram",
+    "isOpen": true,
+    "email": "bmichelle0@nymag.com",
+    "phone": "106-382-4854",
+    "orderType": "Phone",
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6A4Kqx69R9hZqxxGb"
+  },
+  "-Ne6A4KrU6KUF9TQdfxa": {
+    "customerName": "Sarina",
+    "isOpen": true,
+    "email": "spatron1@altervista.org",
+    "phone": "765-822-1704",
+    "orderType": "Walk-in",
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6A4KrU6KUF9TQdfxa"
+  },
+  "-Ne6A4KrU6KUF9TQdfxb": {
+    "customerName": "Filip",
+    "isOpen": true,
+    "email": "flongland2@behance.net",
+    "phone": "675-797-0120",
+    "orderType": "Phone",
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6A4KrU6KUF9TQdfxb"
+  },
+  "-Ne6A4Ks1npKvafZfxZi": {
+    "customerName": "Troy",
+    "isOpen": true,
+    "email": "tmatijasevic3@paypal.com",
+    "phone": "246-364-3873",
+    "orderType": "Walk-in",
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6A4Ks1npKvafZfxZi"
+  },
+  "-Ne6A4Ktm4GzRdswH0Eq": {
+    "customerName": "Agretha",
+    "isOpen": true,
+    "email": "awoollaston4@drupal.org",
+    "phone": "280-158-2639",
+    "orderType": "Phone",
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6A4Ktm4GzRdswH0Eq"
+  },
+  "-Ne6A4Ktm4GzRdswH0Er": {
+    "customerName": "Janene",
+    "isOpen": false,
+    "email": "jmound5@irs.gov",
+    "phone": "118-758-6407",
+    "orderType": "Phone",
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6A4Ktm4GzRdswH0Er"
+  },
+  "-Ne6A4Kuwprp1u9e54_X": {
+    "customerName": "Ruddy",
+    "isOpen": false,
+    "email": "rdeal6@jimdo.com",
+    "phone": "783-997-5544",
+    "orderType": "Phone",
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6A4Kuwprp1u9e54_X"
+  },
+  "-Ne6A4Kuwprp1u9e54_Y": {
+    "customerName": "Klarrisa",
+    "isOpen": false,
+    "email": "ksagerson7@mapquest.com",
+    "phone": "474-175-1290",
+    "orderType": "Walk-in",
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6A4Kuwprp1u9e54_Y"
+  },
+  "-Ne6A4Kvl1kp1YiiR4iK": {
+    "customerName": "Lorenza",
+    "isOpen": true,
+    "email": "lsealove8@baidu.com",
+    "phone": "463-173-4202",
+    "orderType": "Phone",
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6A4Kvl1kp1YiiR4iK"
+  },
+  "-Ne6A4KwkuE6S0YqbVr5": {
+    "customerName": "Bordy",
+    "isOpen": false,
+    "email": "byaus9@reuters.com",
+    "phone": "684-577-2968",
+    "orderType": "Walk-in",
+    "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
+    "firebaseKey": "-Ne6A4KwkuE6S0YqbVr5"
+  }
+}
