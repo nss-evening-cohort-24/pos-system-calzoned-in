@@ -7,7 +7,6 @@ const emptyItems = () => {
 };
 
 const showItems = (res) => {
-  console.warn('?', res);
   clearDom();
   let domString = '';
   if (res.orderItems.length < 1) {

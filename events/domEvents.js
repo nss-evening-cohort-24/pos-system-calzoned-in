@@ -1,5 +1,5 @@
 import {
-  getOrders, deleteOrder, getSingleOrder, deleteItemFromOrder
+  getOrders, deleteOrder, getSingleOrder, deleteItemFromOrder, updateOrder
 } from '../api/orderData';
 import addOrderForm from '../forms/orderForm';
 import getItemsByOrder from '../api/getItemsByOrder';
@@ -7,6 +7,7 @@ import { showOrders, emptyOrders } from '../pages/orders';
 import { getItems, createOrderItem, updateOrderItems } from '../api/itemData';
 import addNewItem from '../forms/itemForm';
 import { showItems } from '../pages/items';
+import closeOrderForm from '../forms/closeOrderForm';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -86,6 +87,33 @@ const domEvents = (user) => {
       }
     }
   });
+  document.querySelector('#store').addEventListener('click', (e) => {
+    if (e.target.id.includes('payment-type-btn')) {
+      const [, orderId, total] = e.target.id.split('--');
+      closeOrderForm(orderId, total);
+    }
+    if (e.target.id.includes('close-order-')) {
+      console.warn('closing order!');
+      const [, firebaseKey, total] = e.target.id.split('--');
+      console.warn('closing order!');
+      getSingleOrder(firebaseKey).then((res) => {
+        const paymentType = document.querySelector(`#close-order--${firebaseKey}--${total} #payment`);
+        const tipAmount = document.querySelector(`#close-order--${firebaseKey}--${total} #tips`);
+        if (paymentType && tipAmount) {
+          const payload = {
+            orderId: firebaseKey,
+            isOpen: false,
+            total,
+            paymentType: paymentType.value,
+            tip: tipAmount.value,
+            ordertype: res.ordertype
+          };
+          updateOrder(payload).then(() => {
+            getOrders(user.uid).then(showOrders);
+          });
+        }
+      });
+    }
+  });
 };
-
 export default domEvents;
