@@ -3,6 +3,9 @@ import {
 } from '../api/orderData';
 import { showOrders } from '../pages/orders';
 import { createRevenue, updateRevenue } from '../api/revenue';
+import { updateOrderItems } from '../api/itemData';
+import getItemsByOrder from '../api/getItemsByOrder';
+import { showItems } from '../pages/items';
 
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
@@ -23,6 +26,19 @@ const formEvents = (user) => {
         updateOrder(patchPayload).then(() => {
           getOrders(user.uid).then(showOrders);
         });
+      });
+    }
+    if (e.target.id.includes('edit-item')) {
+      console.warn('edit items');
+      const [, itemId, orderId] = e.target.id.split('--');
+      const payload = {
+        itemName: document.querySelector('#item_name').value,
+        price: document.querySelector('#price').value,
+        itemid: itemId,
+      };
+
+      updateOrderItems(payload).then(() => {
+        getItemsByOrder(orderId).then((res) => showItems(res));
       });
     }
     if (e.target.id.includes('update-order')) {

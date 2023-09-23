@@ -1,15 +1,18 @@
 import {
-  getOrders, deleteOrder, getSingleOrder, deleteItemFromOrder
+  getOrders, deleteOrder, getSingleOrder, deleteItemFromOrder, getSingleItemOrder
 } from '../api/orderData';
 import addOrderForm from '../forms/orderForm';
 import getItemsByOrder from '../api/getItemsByOrder';
 import { showOrders, emptyOrders } from '../pages/orders';
-import { getItems, createOrderItem, updateOrderItems } from '../api/itemData';
+import {
+  getItems, createOrderItem, updateOrderItems, getSingleItem
+} from '../api/itemData';
 import addNewItem from '../forms/itemForm';
 import { showItems } from '../pages/items';
 import closeOrderForm from '../forms/closeOrderForm';
 import { getRevenue } from '../api/revenue';
 import displayRevenue from '../pages/revenue';
+import editItemForm from '../forms/editItemForm';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -27,6 +30,12 @@ const domEvents = (user) => {
           });
         });
       }
+    }
+  });
+  document.querySelector('#store').addEventListener('click', (e) => {
+    if (e.target.id.includes('edit-item')) {
+      const [, firebaseKey] = e.target.id.split('--');
+      getSingleItem(firebaseKey).then(editItemForm);
     }
   });
   document.querySelector('#landing-page').addEventListener('click', (e) => {
@@ -81,12 +90,11 @@ const domEvents = (user) => {
     }
   });
   document.querySelector('#store').addEventListener('click', (e) => {
-    const [,, orderId] = e.target.id.split('--');
     if (e.target.id.includes('delete-item-btn')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete item?')) {
-        const [, firebaseKey] = e.target.id.split('--');
-        deleteItemFromOrder(firebaseKey).then(() => {
+        const [, itemId, orderId] = e.target.id.split('--');
+        getSingleItemOrder(itemId, orderId).then((obj) => deleteItemFromOrder(obj.firebaseKey)).then(() => {
           getItemsByOrder(orderId).then((res) => showItems(res));
         });
       }
