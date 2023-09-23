@@ -1,5 +1,8 @@
-import { getOrders, createOrder, updateOrder } from '../api/orderData';
+import {
+  getOrders, createOrder, updateOrder, getSingleOrder
+} from '../api/orderData';
 import { showOrders } from '../pages/orders';
+import { createRevenue, updateRevenue } from '../api/revenue';
 
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
@@ -36,6 +39,30 @@ const formEvents = (user) => {
 
       updateOrder(payload).then(() => {
         getOrders(user.uid).then(showOrders);
+      });
+    }
+  });
+  document.querySelector('#store').addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (e.target.id.includes('close-order-')) {
+      const [, firebaseKey, total] = e.target.id.split('--');
+      getSingleOrder(firebaseKey).then((res) => {
+        const payload = {
+          orderId: firebaseKey,
+          total: Number(total) + Number(document.querySelector('#tips').value),
+          paymentType: document.querySelector('#payment').value,
+          tipTotal: document.querySelector('#tips').value,
+          orderType: res.orderType
+        };
+        const closePayload = { firebaseKey, isOpen: false };
+        updateOrder(closePayload).then(() => {
+          createRevenue(payload).then(({ name }) => {
+            const patchPayload = { firebaseKey: name };
+            updateRevenue(patchPayload).then(() => {
+              getOrders().then(showOrders);
+            });
+          });
+        });
       });
     }
   });

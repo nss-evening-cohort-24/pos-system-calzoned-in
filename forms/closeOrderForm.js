@@ -2,7 +2,6 @@ import clearDom from '../utils/clearDom';
 import renderToDom from '../utils/renderToDom';
 
 const closeOrderForm = (orderId, total) => {
-  console.warn('?', orderId);
   clearDom();
   const domString = `
     <div class="form-group">
@@ -13,6 +12,7 @@ const closeOrderForm = (orderId, total) => {
           <option value="cash">Cash</option>
           <option value="mobile">Mobile</option>
         </select>
+        <div id="order_type">
       </div>
       <div class="form-group">
         <label for="tips">Tip:</label><BR>
