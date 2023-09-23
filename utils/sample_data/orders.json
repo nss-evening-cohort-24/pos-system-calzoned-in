@@ -6,7 +6,9 @@
     "phone": "106-382-4854",
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
-    "firebaseKey": "-Ne6A4Kqx69R9hZqxxGb"
+    "firebaseKey": "-Ne6A4Kqx69R9hZqxxGb",
+    "paymentType": "Cash",
+    "tip": 10
   },
   "-Ne6A4KrU6KUF9TQdfxa": {
     "customerName": "Sarina",
@@ -15,7 +17,9 @@
     "phone": "765-822-1704",
     "orderType": "Walk-in",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
-    "firebaseKey": "-Ne6A4KrU6KUF9TQdfxa"
+    "firebaseKey": "-Ne6A4KrU6KUF9TQdfxa",
+    "paymentType": "Cash",
+    "tip": 10
   },
   "-Ne6A4KrU6KUF9TQdfxb": {
     "customerName": "Filip",
@@ -24,7 +28,9 @@
     "phone": "675-797-0120",
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
-    "firebaseKey": "-Ne6A4KrU6KUF9TQdfxb"
+    "firebaseKey": "-Ne6A4KrU6KUF9TQdfxb",
+    "paymentType": "Cash",
+    "tip": 10
   },
   "-Ne6A4Ks1npKvafZfxZi": {
     "customerName": "Troy",
@@ -33,7 +39,9 @@
     "phone": "246-364-3873",
     "orderType": "Walk-in",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
-    "firebaseKey": "-Ne6A4Ks1npKvafZfxZi"
+    "firebaseKey": "-Ne6A4Ks1npKvafZfxZi",
+    "paymentType": "Cash",
+    "tip": 10
   },
   "-Ne6A4Ktm4GzRdswH0Eq": {
     "customerName": "Agretha",
@@ -42,7 +50,9 @@
     "phone": "280-158-2639",
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
-    "firebaseKey": "-Ne6A4Ktm4GzRdswH0Eq"
+    "firebaseKey": "-Ne6A4Ktm4GzRdswH0Eq",
+    "paymentType": "Cash",
+    "tip": 10
   },
   "-Ne6A4Ktm4GzRdswH0Er": {
     "customerName": "Janene",
@@ -51,7 +61,9 @@
     "phone": "118-758-6407",
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
-    "firebaseKey": "-Ne6A4Ktm4GzRdswH0Er"
+    "firebaseKey": "-Ne6A4Ktm4GzRdswH0Er",
+    "paymentType": "Cash",
+    "tip": 10
   },
   "-Ne6A4Kuwprp1u9e54_X": {
     "customerName": "Ruddy",
@@ -60,7 +72,9 @@
     "phone": "783-997-5544",
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
-    "firebaseKey": "-Ne6A4Kuwprp1u9e54_X"
+    "firebaseKey": "-Ne6A4Kuwprp1u9e54_X",
+    "paymentType": "Cash",
+    "tip": 10
   },
   "-Ne6A4Kuwprp1u9e54_Y": {
     "customerName": "Klarrisa",
@@ -69,7 +83,9 @@
     "phone": "474-175-1290",
     "orderType": "Walk-in",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
-    "firebaseKey": "-Ne6A4Kuwprp1u9e54_Y"
+    "firebaseKey": "-Ne6A4Kuwprp1u9e54_Y",
+    "paymentType": "Cash",
+    "tip": 10
   },
   "-Ne6A4Kvl1kp1YiiR4iK": {
     "customerName": "Lorenza",
@@ -78,7 +94,9 @@
     "phone": "463-173-4202",
     "orderType": "Phone",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
-    "firebaseKey": "-Ne6A4Kvl1kp1YiiR4iK"
+    "firebaseKey": "-Ne6A4Kvl1kp1YiiR4iK",
+    "paymentType": "Cash",
+    "tip": 10
   },
   "-Ne6A4KwkuE6S0YqbVr5": {
     "customerName": "Bordy",
@@ -87,6 +105,8 @@
     "phone": "684-577-2968",
     "orderType": "Walk-in",
     "uid": "8h17K93yzmS75odDIv0ig4lffZ13",
-    "firebaseKey": "-Ne6A4KwkuE6S0YqbVr5"
+    "firebaseKey": "-Ne6A4KwkuE6S0YqbVr5",
+    "paymentType": "Cash",
+    "tip": 10
   }
 }
